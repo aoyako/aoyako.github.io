@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>aoyako.github.io/research/</loc>
+    <loc>/research/</loc>
     <lastmod>2023-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>aoyako.github.io/achievments/</loc>
+    <loc>/achievments/</loc>
     <lastmod>2023-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>aoyako.github.io/contacts/</loc>
+    <loc>/contacts/</loc>
     <lastmod>2023-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>aoyako.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2023-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>aoyako.github.io/members/</loc>
+    <loc>/members/</loc>
     <lastmod>2023-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>aoyako.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>aoyako.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
