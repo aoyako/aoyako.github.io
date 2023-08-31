@@ -1,0 +1,94 @@
+@import 'base.css';
+@import 'header.css';
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Mono:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Mono', monospace;
+    /* font-size: 1rem; */
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.md-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+    >div {
+        flex: 1 1;
+        margin: 1rem 0;
+        min-width: 100px;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .markdown-inner {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .md-columns {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 90%;
+        /* background-color: brown; */
+
+        >div {
+            flex: 1 1;
+            margin: 1rem 0;
+            min-width: 100%;
+            max-width: 100%;
+            padding: 0 0rem;
+            /* background-color: blue; */
+        }
+
+        .markdown-inner {
+            /* background-color: blueviolet; */
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+
+.person-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+}
+
+.selfie-wrapper {
+    max-width: 8em;
+    max-height: 8em;
+    flex: 0 0 auto;
+    margin-right: 4em;
+}
+
+.selfie-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.person-content {
+    flex: 1;
+}
+
+.person-name {
+    font-weight: bold;
+}

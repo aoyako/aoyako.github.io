@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index on Lab website</title>
+    <link>aoyako.github.io/</link>
+    <description>Recent content in Index on Lab website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="aoyako.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>aoyako.github.io/research/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>aoyako.github.io/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Achievments</title>
+      <link>aoyako.github.io/achievments/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>aoyako.github.io/achievments/</guid>
+      <description>▶ Achievments Links to the research achievements: &amp;lt;&amp;gt;, &amp;lt;&amp;gt;, &amp;lt;&amp;gt;. wf
+📑 Publications in international journals Item 1 Item 2 Item 3 🗣️ International conferences Item 1 Item 2 Item 3 </description>
+    </item>
+    
+    <item>
+      <title>Contacts</title>
+      <link>aoyako.github.io/contacts/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>aoyako.github.io/contacts/</guid>
+      <description>▶ Contacts Something&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Members</title>
+      <link>aoyako.github.io/members/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>aoyako.github.io/members/</guid>
+      <description>▶ Members Something&amp;hellip;
+Postdoc 🎓 Name Surname About: Phasellus a lectus in augue dictum fermentum. Mauris pharetra tellus sed augue pulvinar varius. Ut sit amet porta lacus. Graduate 📚 Name Surname About: Phasellus a lectus in augue dictum fermentum. Mauris pharetra tellus sed augue pulvinar varius. Ut sit amet porta lacus. Professors 📓 Name Surname Some text here </description>
+    </item>
+    
+  </channel>
+</rss>

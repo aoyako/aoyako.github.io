@@ -1,0 +1,147 @@
+._header {
+    grid-area: header;
+    display: flex;
+    width: 100%;
+}
+
+._footer {
+    /* width: 100vw; */
+    /* margin: auto auto; */
+    /* grid-area: footer; */
+    /* display: flex; */
+    width: 100vw;
+    max-width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(146deg, rgba(2, 0, 36, 1) 0%, rgba(42, 131, 102, 1) 0%, rgba(152, 238, 255, 1) 100%);
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+._body {
+    max-width: 70vw;
+    min-width: 70vw;
+    /* min-width: 45rem; */
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 1em;
+    /* padding-right: 1em; */
+    /* padding-top: 3px; */
+    padding-bottom: 3px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    transition: 0.3s;
+    /* padding-bottom: 2px; */
+}
+
+nav.nav_desc {
+    display: block;
+}
+
+nav.nav_mobile {
+    display: none;
+}
+
+nav.nav_micro {
+    display: none;
+}
+
+nav li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 0.9em;
+}
+
+nav li:hover {
+    background-color: #116D6E;
+}
+
+nav li:hover a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    nav li {
+        transition: 0s;
+    }
+
+    nav li a {
+        font-size: 0.9em;
+    }
+
+    nav li:hover {
+        background-color: transparent;
+    }
+
+    nav li:hover a {
+        color: black !important;
+        text-decoration: underline;
+    }
+
+    nav li a,
+    a:hover,
+    a:active {
+        color: black !important;
+    }
+
+
+    ._body {
+        padding-left: 3%;
+        padding-right: 3%;
+        /* width: 90%; */
+        min-width: 90%;
+        /* background-color: #116D6E; */
+    }
+
+    nav.nav_desc {
+        display: none;
+    }
+
+    nav.nav_mobile {
+        display: flex;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+
+    nav.nav_micro {
+        display: none;
+    }
+}
+
+@media (max-width: 355px) {
+    nav.nav_desc {
+        display: none;
+    }
+
+    nav.nav_mobile {
+        display: none;
+    }
+
+    nav.nav_micro {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 0.3em;
+        /* padding-right: 1em; */
+        /* padding-top: 3px; */
+        padding-bottom: 3px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        transition: 0.3s;
+        /* padding-bottom: 2px; */
+    }
+}
