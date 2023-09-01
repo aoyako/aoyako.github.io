@@ -92,3 +92,17 @@
 .person-name {
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .selfie-wrapper {
+        margin: auto;
+    }
+
+    .person-container {
+        display: block;
+    }
+
+    .person-name {
+        margin-top: 22px;
+    }
+}
