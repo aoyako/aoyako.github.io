@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on aoyako&#39;s blog</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on aoyako&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2023–2024 [Lohachov Mykhailo](/)</copyright>
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chip border extraction - I</title>
+      <link>/post/package_1/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/package_1/</guid>
+      <description>Welcome to my series on microchip-image extraction techniques. This algorithm was designed during my internship in a microchip manufacturing factory. Its primary objective is to autonomously compute the sizes and positions of chips within a package, simplifying subsequent processing by a machine operator. Our approach relies on employing discrete Fourier transformations on images, and a method was chosen for its efficacy in distinguishing repetitive patterns. You can find full code in my GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>

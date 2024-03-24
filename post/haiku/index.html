@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Running Haiku OS in VirtualBox &ndash; aoyako&#39;s blog</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="../../css/palettes/gruvbox-dark.css">
+<link rel="stylesheet" href="../../css/risotto.css">
+<link rel="stylesheet" href="../../css/custom.css">
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="../../" class="page__logo-inner">aoyako&#39;s blog</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="../../about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="../../posts/" title="">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Running Haiku OS in VirtualBox</h1>
+    </header>
+    
+    <div class="content__body">
+        <link rel="stylesheet" href="../../css/hack.css">
+<h3 id="this-article-describes-my-best-attempts-to-use-haiku-in-virtualbox">This article describes my best attempts to use Haiku in VirtualBox</h3>
+<p>It is commonly used to install Haiku in VirtualBox, but many instructions are missing. While installation is pretty straightforward, adding integrations between host and guest since Guest Additions are not supported.
+<img src="images/future_dark.jpg#banner" alt="Haiku"></p>
+<p>Installation process is described on the official <a href="https://www.haiku-os.org/guides/virtualizing/virtualbox/">homepage</a>, but here is a recap:</p>
+<ol>
+<li>Install official <a href="https://www.haiku-os.org/get-haiku/r1beta4/">ISO</a></li>
+<li>Create a VM with a VDI hard disk and allocate more than 4 GB</li>
+<li>Attach Haiku ISO to a VM</li>
+<li><strong>Extra</strong>: Haiku performance might be reduced on some VirtualBox versions, so it is safer to set the number of CPUs to 1</li>
+<li>Finally, Follow the instructions when installing OS on a disk</li>
+</ol>
+<h4 id="enabling-ssh">Enabling SSH</h4>
+<p>This section is partially described in <a href="https://www.haiku-os.org/guides/daily-tasks/netservices/">Network services section</a>.</p>
+<ol>
+<li>Set the user&rsquo;s password (in Terminal) [<code>~&gt; passwd</code>]</li>
+<li>In <code>/system/settings/ssh/sshd_config</code>, add <code>PermitRootLogin yes</code></li>
+<li>Configure Network for VM: Either
+<ul>
+<li>Add Host-only Adapter in VM&rsquo;s Network Settings (IP will be in Desktop applets &ndash;&gt; Network Status)</li>
+<li>Add port forwarding from guest 22 to some other host&rsquo;s port (IP is same as localhost)</li>
+</ul>
+</li>
+</ol>
+<h4 id="enabling-shared-clipboard">Enabling shared clipboard</h4>
+<ol>
+<li>In HaikuDepot, search for <code>VM Guest Additions</code> and install it.</li>
+<li>Enable Shared Clipboard in VirtualBox &ndash;&gt; Devices</li>
+</ol>
+<h4 id="enabling-shared-folders">Enabling shared folders</h4>
+<ol>
+<li>In VM Settings &ndash;&gt; Shader Folders, add a desired folder with auto mount.</li>
+<li>Create a folder in Haiku where it will be mounted</li>
+<li>In Haiku&rsquo;s Terminal [<code>mount -t vboxsf -p &lt;device&gt; &lt;mount path&gt;</code>]</li>
+</ol>
+<p>Initially, it was a pain to use Haiku due to many features being in development, and after some work, it is still a pain, but with a bit of sugar 😉.</p>
+<h3 id="references">References</h3>
+<p>Image by MissBrae01 <a href="mailto:missbrae01@gmail.com">missbrae01@gmail.com</a></p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/aoyako" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:ml.logachevsky@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://leetcode.com/Aoyako/" rel="me" aria-label="Leetcode" title="Leetcode"><i class="fa-solid fa-code" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://codeforces.com/profile/NoVasya" rel="me" aria-label="Codefeorces" title="Codefeorces"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.kaggle.com/aoyako" rel="me" aria-label="Kaggle" title="Kaggle"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    <p>Setting up Haiku environment</p>
+    
+        <p>
+            By Lohachov Mykhailo, 
+            2023-03-24
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+    
+    
+</p>
+<br /><br />
+<p class="copyright">© 2023–2024 <a href="../../">Lohachov Mykhailo</a></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

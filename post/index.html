@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Posts &ndash; aoyako&#39;s blog</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="../css/palettes/gruvbox-dark.css">
+<link rel="stylesheet" href="../css/risotto.css">
+<link rel="stylesheet" href="../css/custom.css">
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="../" class="page__logo-inner">aoyako&#39;s blog</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="../about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="../posts/" title="">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Posts</h1>
+        
+    </header>
+
+    
+    <article class="post">
+        <header class="post__header">
+            <h1><a href="../post/haiku/">Running Haiku OS in VirtualBox</a></h1>
+            <p class="post__meta">
+                Lohachov Mykhailo,
+                <span class="date">24 March 2023</span>
+            </p>
+        </header>
+
+        <section class="post__summary">
+            This article describes my best attempts to use Haiku in VirtualBox It is commonly used to install Haiku in VirtualBox, but many instructions are missing. While installation is pretty straightforward, adding integrations between host and guest since Guest Additions are not supported. Installation process is described on the official homepage, but here is a recap:
+Install official ISO Create a VM with a VDI hard disk and allocate more than 4 GB Attach Haiku ISO to a VM Extra: Haiku performance might be reduced on some VirtualBox versions, so it is safer to set the number of CPUs to 1 Finally, Follow the instructions when installing OS on a disk Enabling SSH This section is partially described in Network services section.
+        </section>
+    </article>
+    
+    <article class="post">
+        <header class="post__header">
+            <h1><a href="../post/package_1/">Chip border extraction - I</a></h1>
+            <p class="post__meta">
+                Lohachov Mykhailo,
+                <span class="date">11 January 2023</span>
+            </p>
+        </header>
+
+        <section class="post__summary">
+            Welcome to my series on microchip-image extraction techniques. This algorithm was designed during my internship in a microchip manufacturing factory. Its primary objective is to autonomously compute the sizes and positions of chips within a package, simplifying subsequent processing by a machine operator. Our approach relies on employing discrete Fourier transformations on images, and a method was chosen for its efficacy in distinguishing repetitive patterns. You can find full code in my GitHub.
+        </section>
+    </article>
+    
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/aoyako" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:ml.logachevsky@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://leetcode.com/Aoyako/" rel="me" aria-label="Leetcode" title="Leetcode"><i class="fa-solid fa-code" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://codeforces.com/profile/NoVasya" rel="me" aria-label="Codefeorces" title="Codefeorces"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.kaggle.com/aoyako" rel="me" aria-label="Kaggle" title="Kaggle"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+    
+    
+</p>
+<br /><br />
+<p class="copyright">© 2023–2024 <a href="../">Lohachov Mykhailo</a></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haiku on aoyako&#39;s blog</title>
+    <link>/tags/haiku/</link>
+    <description>Recent content in haiku on aoyako&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2023–2024 [Lohachov Mykhailo](/)</copyright>
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/haiku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running Haiku OS in VirtualBox</title>
+      <link>/post/haiku/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/haiku/</guid>
+      <description>This article describes my best attempts to use Haiku in VirtualBox It is commonly used to install Haiku in VirtualBox, but many instructions are missing. While installation is pretty straightforward, adding integrations between host and guest since Guest Additions are not supported. Installation process is described on the official homepage, but here is a recap:
+Install official ISO Create a VM with a VDI hard disk and allocate more than 4 GB Attach Haiku ISO to a VM Extra: Haiku performance might be reduced on some VirtualBox versions, so it is safer to set the number of CPUs to 1 Finally, Follow the instructions when installing OS on a disk Enabling SSH This section is partially described in Network services section.</description>
+    </item>
+    
+  </channel>
+</rss>
